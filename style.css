@@ -1,0 +1,123 @@
+/* set standard style for the body element */
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: small;
+    min-width: 1139px;
+  
+}
+
+/* vertically center the main section of the body */
+main {
+    top: 50%;
+    transform: translateY(50%);
+}
+/*horizontally center the center-div */
+.center-div {
+    text-align: center;
+}
+
+/* style for the search bar */
+input[type="text"] {   
+    display: block;
+    border: 1px solid gray;
+    border-radius: 24px;
+ 
+    height: 44px;
+    width: 482px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-left: 20px;
+    outline: none;
+    
+}
+/* create a shadow effect on hover the search bar */
+input[type="text"]:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* style for the search-button section */
+.search-button {
+    display: block;
+    margin: 0 auto;
+    width: 300px;  
+}
+
+/* style for the search-button buttons */
+.search-button button {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-size: small;
+    font-family: Arial, sans-serif;
+    line-height: 27px;
+    margin: 11px 4px;
+    padding: 5px 16px;
+    min-width: 54px;
+    cursor: pointer;
+}
+
+/* create a shadow effect on hover the search buttons */
+.search-button button:hover {
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+.search-button button:focus {
+    outline: none;
+}
+
+/* create a animaton effect on hover the lucky search button */
+#lucky:hover {
+    animation: scale 3s ease infinite, pulse 2s linear infinite;
+}
+
+/* style for the footer section */
+.footer {
+    background-color: rgba(0,0,0,0.08);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+   
+    width: 100%;
+}
+
+/* style for the a tag (link) inside footer section */
+.footer a {
+    color: #5F6368;
+    text-decoration: none;
+}
+
+/* create a underline effect on hover the link inside footer */
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* style for the left side links */
+.footer-left {
+    float: left;
+    padding: 3px;
+    margin: 10px;
+}
+
+/* style for the right side links */
+.footer-right {
+    float: right;
+    padding: 3px;
+    margin: 10px;
+}
+
+/* create a pulsing/appear & disappear effect */
+@keyframes pulse {
+    0% {   
+       opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
